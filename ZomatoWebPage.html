@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bdy {
+            background-image: url("zomato.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 380px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            width: 100%;
+        }
+        a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+        #one {
+            margin-left: 5%;
+            flex-basis: 40%;
+            font-size: 14px;
+        }
+        #two, #three, #four, #five {
+            margin-right: 2%;
+            flex-basis: 15%;
+            text-align: center;
+            font-size: 17px;
+        }
+        #name {
+            color: aliceblue;
+            font-size: 70px;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #sub {
+            text-align: center;
+            font-size: 40px;
+            color: aliceblue;
+        }
+        .searchbar {
+            background-color: white;
+            height: 30px;
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 10px;
+            position: relative;
+            left: 0;
+            bottom: 0;
+            flex-basis: 20%;
+        }
+        .search{
+            flex-basis: 80%;
+        }
+        .location, .search {
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            width: 45%;
+        }
+        .location svg, .search svg {
+            margin-right: 10px;
+        }
+        .location input, .search input {
+            border: none;
+            outline: none;
+            width: 100%;
+        }
+        #below {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 30px;
+        }
+        .img-container {
+            border-radius: 15%;
+            text-align: left;
+            padding: 10px;
+            width: 350px;
+            height: 250px;
+        }
+        .img-container img {
+            border-radius: 10%;
+            height: 200px;
+            width: 100%;
+        }
+        .img-container p {
+            font-weight: bold;
+            font-size: 25px;
+            margin: 10px 0 5px 0;
+        }
+        .img-container span {
+            font-size: 20px;
+            color: #333;
+        }
+        .img-container:hover{
+            scale: 1.1;
+        }
+        #below{
+            margin-left:85px;
+            margin-right:85px;
+            box-shadow: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="bdy">
+        <nav>
+            <a href="#" id="one"><code>Get The App</code></a>
+            <a href="#" id="two"><code>Investor Relation</code></a>
+            <a href="#" id="three"><code>Add Restaurant</code></a>
+            <a href="#" id="four"><code>Log in</code></a>
+            <a href="#" id="five"><code>Sign up</code></a>
+        </nav>
+        <div id="txt">
+            <h1 id="name"><b>zomato</b></h1>
+            <p id="sub">Discover the best food & drinks in Pune</p>
+        </div>
+        <div class="searchbar">
+            <div class="location">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" class="bi bi-geo-alt-fill"
+                    viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                </svg>
+                <input type="search" placeholder="Pune">
+            </div>
+            <div class="search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+                <input type="search" placeholder="Search for restaurant, cuisine or a dish">
+            </div>
+        </div>
+    </div>
+    <div id="below">
+        <div class="img-container">
+            <img src="zomato3.jpg" alt="Online Order">
+            <p>Online Order</p>
+            <span>Stay Home And Order Your Doorstep</span>
+        </div>
+        <div class="img-container">
+            <img src="zomato2.jpg" alt="Dining">
+            <p>Dining</p>
+            <span>View city's favourite dining venues</span>
+        </div>
+        <div class="img-container">
+            <img src="zomato1.jpg" alt="Night Life and Clubs">
+            <p>Night Life and Clubs</p>
+            <span>Explore the city's top nightlife outlets</span>
+        </div>
+    </div>
+</body>
+</html>
